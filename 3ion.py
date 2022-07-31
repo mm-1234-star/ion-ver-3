@@ -1,6 +1,6 @@
 import discord
 from discord.ext.commands import Bot
-import rando
+import random
 
 intents=discord.Intents.default()
 bot = Bot(command_prefix='이온아 ', intents=intents)
