@@ -6,7 +6,6 @@ intents=discord.Intents.default()
 bot = Bot(command_prefix='이온아 ', intents=intents)
 client = discord.Client()
 
-
 @bot.event
 async def on_ready() :
     await bot.change_presence(status=discord.Status.online, activity=discord.Game("이온아 도움"))
@@ -21,11 +20,13 @@ async def ping(ctx):
 @bot.command()
 async def hello(ctx):
     await ctx.reply('hello world')
-    
+
+
 @bot.command()
 async def 심심해(ctx):
     await ctx.reply('로보토미코퍼레이션 하자 스팀에서 26000원에 판매한다!!')
-    
+
+
 @bot.command()
 async def 뭐하지(ctx):
     await ctx.reply('캐피탈리즘 호! 하는 만화보자!!')
@@ -349,7 +350,7 @@ async def 인형뽑기(ctx):
     weights = [1, 0.1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 50]
     results = random.choices(minerals, weights=weights, k=1)
     await ctx.reply(results[0])
-    
+
     
 @bot.command()
 async def 인(ctx):
@@ -357,7 +358,7 @@ async def 인(ctx):
     weights = [1, 0.1, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 50]
     results = random.choices(minerals, weights=weights, k=1)
     await ctx.reply(results[0])
-    
+
 
 
 @bot.command()
@@ -376,7 +377,5 @@ async def 자(ctx):
     weights = [0.3, 0.7, 0.5, 0.5, 1.5, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 3, 3, 3, 3, 15, 41.5]
     results = random.choices(minerals, weights=weights, k=1)
     await ctx.reply(results[0])
-
-    
 
 bot.run('MTAwMzI3NDE0Mjg2ODU3NDI0OQ.Gm02AT.gFNePefYJCmpm5DaMZmA179zYRta3Qjm34dVNo')
