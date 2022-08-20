@@ -20,6 +20,19 @@ async def ping(ctx):
 @bot.command()
 async def hello(ctx):
     await ctx.reply('hello world')
+    
+
+@bot.command()
+async def 도움(ctx) :
+    embed = discord.Embed(title="안기여운 짭이온!!", description="우주최강이라서 곧 세계를 지배함", color=0x36ccf2)
+    embed.add_field(name="기본 사용법", value="이온아 (하고싶은말)", inline=False)
+    embed.add_field(name="배운말들 별로없음", value="짭이온의 인성이 안좋아서 그렇다", inline=False)
+    embed.add_field(name="이온아 주사위", value="짭이온이 1부터 6까지의 숫자를 랜덤으로 준다", inline=False)
+    embed.add_field(name="이온아 인형뽑기(또는 인)", value="짭이온이 인형뽑기에서 랜덤으로 인형을 뽑아준다", inline=False)
+    embed.add_field(name="이온아 자판기(또는 자)", value="짭이온이 자판기에서 랜덤으로 음료를 뽑아준다", inline=False)
+    embed.add_field(name="이온아 따라하기", value="짭이온이 따라하기뒤에 있는 말을 따라한다", inline=False)
+    embed.set_footer(text="(망한봇..)")
+    await ctx.reply(embed=embed)
 
 
 @bot.command()
