@@ -67,5 +67,49 @@ async def 자기소개(ctx):
 @bot.command()
 async def 따라하기(ctx, *, text):
     await ctx.reply(text)
+    
+@bot.command()
+async def 가위바위보(ctx, user: str):  
+    rps_table = ['가위', '바위', '보']
+    bot = random.choice(rps_table)
+    result = rps_table.index(user) - rps_table.index(bot) 
+    if result == 0:
+        await ctx.reply(f'{user} vs {bot}  비겼다!!')
+    elif result == 1 or result == -2:
+        await ctx.reply(f'{user} vs {bot}  오류임.암튼그럼.')
+    else:
+        await ctx.reply(f'{user} vs {bot}  내가 이김 숫고')
+        
+@bot.command()
+async def 울프(ctx):
+    await ctx.reply('킹받음')
+    
+@bot.command()
+async def 리칸(ctx):
+    await ctx.reply('콩시')
+    
+@bot.command()
+async def 콩시(ctx):
+    await ctx.reply('리칸')
+    
+@bot.command()
+async def 네로리(ctx):
+    await ctx.reply('넬오리!')
+    
+@bot.command()
+async def 오사일공(ctx):
+    await ctx.reply('반왕의 얼마 안되는 돌덕')
+    
+@bot.command()
+async def 에메랄드(ctx):
+    await ctx.reply('나도 저택에 갈 수 있으려나?')
+    
+@bot.command()
+async def 이드(ctx):
+    await ctx.reply('오마이갓 킹갓 지니어스 이즈 히얼')
+    
+@bot.command()
+async def 울프(ctx):
+    await ctx.reply('킹받음')
 
 bot.run('MTAwMzI3NDE0Mjg2ODU3NDI0OQ.Gm02AT.gFNePefYJCmpm5DaMZmA179zYRta3Qjm34dVNo')
