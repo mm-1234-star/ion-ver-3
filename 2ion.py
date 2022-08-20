@@ -43,5 +43,29 @@ async def 심심해(ctx):
 @bot.command()
 async def 뭐하지(ctx):
     await ctx.reply('캐피탈리즘 호! 하는 만화보자!!')
+    
+@bot.command()
+async def 이온(ctx):
+    await ctx.reply('왜')
+
+
+@bot.command()
+async def 이온찬양(ctx):
+    await ctx.reply('차냥해')
+
+
+@bot.command()
+async def 배고파(ctx):
+    await ctx.reply('밥먹어')
+
+
+@bot.command()
+async def 자기소개(ctx):
+    await ctx.reply('세상을 정복할 우주최강 봇!!')
+
+
+@bot.command()
+async def 따라하기(ctx, *, text):
+    await ctx.reply(text)
 
 bot.run('MTAwMzI3NDE0Mjg2ODU3NDI0OQ.Gm02AT.gFNePefYJCmpm5DaMZmA179zYRta3Qjm34dVNo')
