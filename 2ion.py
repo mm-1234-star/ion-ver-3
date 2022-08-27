@@ -68,17 +68,6 @@ async def 자기소개(ctx):
 async def 따라하기(ctx, *, text):
     await ctx.reply(text)
     
-@bot.command()
-async def 가위바위보(ctx, user: str):  
-    rps_table = ['가위', '바위', '보']
-    bot = random.choice(rps_table)
-    result = rps_table.index(user) - rps_table.index(bot) 
-    if result == 0:
-        await ctx.reply(f'{user} vs {bot}  비겼다!!')
-    elif result == 1 or result == -2:
-        await ctx.reply(f'{user} vs {bot}  오류임.암튼그럼.')
-    else:
-        await ctx.reply(f'{user} vs {bot}  내가 이김 숫고')
         
 @bot.command()
 async def 울프(ctx):
