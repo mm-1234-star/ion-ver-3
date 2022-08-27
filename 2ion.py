@@ -98,6 +98,148 @@ async def 울프(ctx):
     await ctx.reply('킹받음')
     
 @bot.command()
+async def 이온(ctx):
+    await ctx.reply('왜')
+
+
+@bot.command()
+async def 이온찬양(ctx):
+    await ctx.reply('차냥해')
+
+
+@bot.command()
+async def 배고파(ctx):
+    await ctx.reply('밥먹어')
+
+
+@bot.command()
+async def 자기소개(ctx):
+    await ctx.reply('세상을 정복할 우주최강 봇!!')
+
+@bot.command()
+async def 안녕(ctx):
+    await ctx.reply('안녕!')  
+    
+@bot.command()
+async def 사랑해(ctx):
+    await ctx.reply('우리..헤어지자...')
+
+
+@bot.command()
+async def 야옹(ctx):
+    await ctx.reply('냐아악아앍엉아아아악')
+
+
+@bot.command()
+async def 돈(ctx):
+    await ctx.reply('돈 없어')
+
+
+@bot.command()
+async def 잘가(ctx):
+    await ctx.reply('짭이온님이 서버를 떠나셨습니다.')
+    
+@bot.command()
+async def 배워(ctx):
+    await ctx.reply('싫어')
+
+
+@bot.command()
+async def 저리가(ctx):
+    await ctx.reply('안녕히 계세요 여러분!전 이 세상의 모든 굴레와 속박을 벗어 던지고 제 행복을 찾아 떠납니다!여러분도 행복하세요~~!')
+
+
+
+@bot.command()
+async def 둣교(ctx):
+    await ctx.reply('둣교봇 귀여워!!')
+
+
+@bot.command()
+async def 소맥거핀님(ctx):
+    await ctx.reply('OwO')
+
+
+@bot.command()
+async def 고누리님(ctx):
+    await ctx.reply('형형~브로콜리 가지 오이 당근 토마트샐러드에 굴소스뿌려서 건포도빵 먹어줘~')
+
+
+@bot.command()
+async def 테미(ctx):
+    await ctx.reply('안뇽! 테미 샵에 온 걸... 화녕행!!!!')
+
+
+@bot.command()
+async def 가우르구라(ctx):
+    await ctx.reply('상어!!')
+
+
+@bot.command()
+async def 크시(ctx):
+    await ctx.reply('자꾸 말바꾼다.')
+
+@bot.command()
+async def 배추(ctx):
+    await ctx.reply('김치!!')
+
+
+@bot.command()
+async def 미육(ctx):
+    await ctx.reply('미역!!')
+    
+@bot.command()
+async def 이프(ctx):
+    await ctx.reply('ㅇㄴㅅ')
+
+
+@bot.command()
+async def 심심해(ctx):
+    await ctx.reply('나도..')
+
+@bot.command()
+async def 링딩동(ctx):
+    await ctx.reply('링딩동링딩동링기리리링링딩딩')
+
+    
+@bot.command()
+async def 뀨(ctx):
+    await ctx.reply('뀨')
+
+@bot.command()
+async def 호야(ctx):
+    await ctx.reply('쇼팽의 겨울바람 친거 칭찬!!')
+    
+@bot.command()
+async def 깡통(ctx):
+    await ctx.reply('아니거든!!')
+
+
+@bot.command()
+async def 샌즈(ctx):
+    await ctx.reply('wa sans!')
+
+@bot.command()
+async def 슈슉(ctx):
+    await ctx.reply('슉.슈슉.슈.슈슉.슉')
+    
+@bot.command()
+async def 주떡(ctx):
+    await ctx.reply('주떡은 여신이다')
+
+@bot.command()
+async def 쿠마린(ctx):
+    await ctx.reply('쿠마린은 여신이다')
+    
+@bot.command()
+async def 아쿠아마린(ctx):
+    await ctx.reply('아쿠아마린은 여신이다')
+    
+@bot.command()
+async def 앤트킴(ctx):
+    await ctx.reply(':ant:')
+    
+@bot.command()
 async def 가위바위보(ctx, user: str):  
     rps_table = ['가위', '바위', '보']
     bot = random.choice(rps_table)
