@@ -68,10 +68,6 @@ async def 자기소개(ctx):
 async def 따라하기(ctx, *, text):
     await ctx.reply(text)
     
-        
-@bot.command()
-async def 울프(ctx):
-    await ctx.reply('킹받음')
     
 @bot.command()
 async def 리칸(ctx):
@@ -100,5 +96,7 @@ async def 이드(ctx):
 @bot.command()
 async def 울프(ctx):
     await ctx.reply('킹받음')
+    
+
 
 bot.run('MTAwMzI3NDE0Mjg2ODU3NDI0OQ.Gm02AT.gFNePefYJCmpm5DaMZmA179zYRta3Qjm34dVNo')
