@@ -1,1 +1,6 @@
 discord.py
+io
+requests
+json
+asyncio
+Pillow
