@@ -117,4 +117,4 @@ async def 뭔가메스가키(ctx, message: discord.Option(str)):
     embed = discord.Embed(title=f"허접♡{converted}~~www 완전 최저♡", color=0x00FFFF)
     await ctx.respond(embed=embed)
 
-bot.run('ODc2OTY5MDQ3MTcyOTg5MDI5.GkIHCn.kZYOHsdSG97Nv8xI31JwAxGvagbymJaSbkq3uM')
+bot.run(token)
